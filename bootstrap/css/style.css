@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.btn{
+    border-radius: 50px;
+}
+
+/* -------------- Navbar ------------- */
+.navbar{
+    padding: 25px !important;
+    font-size: 20px;
+}
+.navbar .navbar-brand{
+    font-size: 40px;
+    font-weight: bold;
+}
+.top-nav-collapse{
+    background-color: black;
+    padding: 0.75rem !important;
+}
+
+/* ----------Landing Page ------------- */
+.landing-div{
+    background: white url("../../images/bg-image.jpg") no-repeat scroll center;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+}
+.landing-wrapper{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.landing-wrapper h1{
+    font-size: 80px;
+}
+
+/* -------------- Tour Guide Section ------------- */
+.tour-image{
+    border-radius: 10px;
+    box-shadow: 0 15px 15px black;
+    height: 525px;
+    width: 400px;
+}
+
+/* -----------Services Section --------- */
+.service-area p{
+    color: white !important;
+}
+
+/* -------------- Best Place Destination ------------- */
+
+.dest-card{
+    border-radius: 10px !important;
+    color: white;
+    cursor: pointer;
+
+}
+.dest-card-img{
+    border-radius: 10px !important;
+    position: relative;
+}
+.dest-card-title{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+.dest-card-info h4{
+    margin-bottom: 0px;
+}
+.dest-card-info{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: coral;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 0 50px 50px 0;
+    width: 45%;
+    transition: all 0.5s;
+    text-align: right;
+
+}
+.dest-card:hover .dest-card-info{
+    width: 50%;
+    background-color: orangered;
+}
+
+/* ------------ Video Section --------------- */
+.video-section{
+    margin: 0px;
+    padding: 0px;
+}
+
+.video-div{
+    position: relative;
+}
+.video-div h1{
+    font-family: 'Nothing You Could Do', cursive;
+}
+.video-section video{
+    height: 100%;
+    width: 100%;
+}
+.vid-overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.vid-content{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.fa-play-circle{
+    border: 3px solid transparent;
+    border-radius: 50%;
+    animation: glow-icon 1.5s infinite linear;
+}
+@keyframes glow-icon{
+    0% , 100%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.07,1.07);
+        box-shadow: 0 0 10px white;
+        border: 3px dotted white;
+    }
+}
+
+/* --------- Locations Section ---------- */
+
+.location-card{
+    box-shadow: 0 10px 10px black;
+    border-radius: 10px;
+}
+.location-img{
+    position: relative;
+}
+.location-price{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0,250,0,0.5);
+    padding: 10px 15px;
+    color: white;
+}
+
+/* ---------- Newsletter --------- */
+
+/* --------------- Testimonial --------------*/
+.testimonial{
+    text-align: center;
+    padding: 30px 30px 50px;
+    margin: 0 15px 100px;
+    position: relative;
+    margin-top: 50px;
+}
+.testimonial:before,
+.testimonial:after{
+    content: "";
+    border-right: 125px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+.testimonial:after{
+    border-right: none;
+    border-left: 125px solid transparent;
+    left: auto;
+    right: 0;
+}
+.testimonial .icon{
+    display: inline-block;
+    font-size: 80px;
+    color: #bd986b;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+.testimonial .description{
+    font-size: 16px;
+    /* color: #777; */
+    color: #040E27;
+    text-align: justify;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    letter-spacing: -1px;
+}
+.testimonial .testimonial-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.testimonial .pic{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px #daad86;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .title{
+    font-size: 15px;
+    font-weight: bold;
+    /* color: #fff; */
+    color: #040E27;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 14px;
+    /* color: #ffd9b8; */
+    color: #040E27;
+}
+.owl-theme .owl-controls{
+    margin-top: 60px;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 32px;
+    height: 10px;
+    background: #fff;
+    /* border: 2px solid #040E27; */
+    margin: 5px;
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #FF4A52;
+}
+    .pic img{
+        width: 100px !important;
+        height: 50px;
+    }
+/* ------------- Footer ------------ */
+.main-footer{
+    background: white url("../../images/footer-image.jpg") no-repeat scroll center;
+    background-size: cover;
+    color: white;
+}
+.footer-wrapper{
+    background-color: rgba(0,0,0, 0.8);
+}
+
+.footer-border{
+    border-top: 1px solid #363E52;
+}
+
+/* -------------------  Media Queries ----------- */
+
+@media screen and (max-width:767px){
+    .tour-guide .tour-guide-img{
+        padding-bottom: 50px;
+    }
+    .best-place .row .col-md-3 {
+        padding: 15px 0px;
+
+    }
+    .location .col-md-4{
+        padding: 15px 0px;
+    }
+
+    .dest-card:hover .dest-card-info{
+        width: 50%;
+        background-color: orangered;
+    }
+
+    .video-section .video-div h1{
+        display: none;
+    }
+}
