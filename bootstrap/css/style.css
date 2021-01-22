@@ -15,7 +15,7 @@ html{
 
 /* -------------- Navbar ------------- */
 .navbar{
-    padding: 25px !important;
+    padding: 1rem !important;
     font-size: 20px;
 }
 .navbar .navbar-brand{
@@ -289,4 +289,10 @@ html{
     .video-section .video-div h1{
         display: none;
     }
+}
+
+@media screen and (max-width:576px){
+.landing-wrapper h1 {
+    font-size: 60px;
+}
 }
